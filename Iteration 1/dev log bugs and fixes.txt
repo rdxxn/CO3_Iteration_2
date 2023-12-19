@@ -1,0 +1,9 @@
+b582889 - Couldnt get the buttons to scale when shrinking the form, so limited size in order to fix the issue as the issue only occured on sizes too small to reasonably use.
+f94cb34 - Due to hiding the main menu form, when pressing x on the opened menus it would close the form rather than the application, Solved by adding Application.Exit() to the formclosing event which overides this to close the entire application.
+d80ac45 - Bug causing the opened forms to be different sizes to the previous form solved by copying the size and maximised state across forms being opened
+be3e377 - Bug causing the opened forms position to be different to the previous form, solved by copying the desktop position between forms
+f27990b - Leaderboards resizing improperly, Maps 1 and 2 stayed the same width and leaderboard 3 filled the expanded space https://imgur.com/a/EKn4FAF
+f27990b - Leaderboards scaling correctly vertically but do not scale horizontally correctly https://imgur.com/a/fVvAMZZ https://imgur.com/a/uqCfkSp
+f27990b - Fixed both by using a TableLayoutPanel
+213d6ff - The titles of the Leader boards do not automatically center and stay at the same distance from the left https://imgur.com/a/4wMmwxb solved by removing the left and right anchors on the label, leaving only the top anchor
+213d6ff - The MapSelectMenu MedalContainers do not scale correctly https://imgur.com/a/83W4E9S https://imgur.com/a/pEoPMZ3 fixed because forgot to dock:fill the MapMedalContainers
